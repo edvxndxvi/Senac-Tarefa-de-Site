@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperatriz Villa Bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--Começo Menu de Navegação-->
+   <header>
+        <nav class="container">
+            <a href="index.html"><img src="imagens/logo.jpg"></a>
+            <ul>
+                <li><a href="#">Nossa história</a></li>
+                <li><a href="#">Cardápio</a></li>
+                <li><a href="index.html #ondeEstamos">Onde estamos</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="reserva.html">Reserva</a></li>
+            </ul>
+        </nav>
+    </header>
+<!--Fim Menu de Navegação-->
+
+    <div class="mainReservaBackground">
+        <div class="conteudoMainReserva container">
+            <h2>Reserva</h2>
+            <h4>Faça a reserva de uma mesa em nosso restaurante.</h4>
+            <div id="formReserva">
+                <p>Digite seu nome<br><input type="text" id="nome"></p>
+                <p>Digite seu telefone<br><input type="tel" placeholder="(XX)91234-5678" id="telefone"></p>
+                <p>Selecione a data da reserva<br><input type="date" id="data"></p>
+                <p>Selecione o horário da reserva<br><input type="time" id="hora"></p>
+                <p><button type="submit" onclick="reserva()">Fazer reserva</button></p>
+            </div>
+        </div>
+    </div>
+   
+
+
+
+<!--Começo Footer-->
+    <footer>
+        <div class="conteudoFooter container">
+            <a href="index.html"><img src="imagens/logo.jpg" width="200px"></a>
+            <ul>
+                <li><a href="#">Nossa história</a></li>
+                <li><a href="#">Cardápio</a></li>
+                <li><a href="index.html #ondeEstamos">Onde estamos</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="reserva.html">Reserva</a></li>
+            </ul>
+        </div>
+    </footer>
+<!--Fim Footer-->
+<script src="script.js"></script>
+</body>
+</html>

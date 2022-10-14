@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1240px;
+    width: 90%;
+    margin: 0 auto;
+}
+/* Começo Menu de Navegação */
+header{
+    background-color: #002E0F;
+}
+nav img{
+    width: 200px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    font-size: 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: wheat;
+}
+/* Fim Menu de Navegação */
+
+main{
+    background-image: url(imagens/copos.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+main::before{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.textoMain{
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+.textoMain h1{
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.textoMain p{
+    font-size:24px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.destaques{
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.destaques h2{
+    color: #124503;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.containerBlocos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+.blocos img{
+    max-width: 280px;
+    width: 100%;
+}
+.blocos{
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(197, 197, 197);
+    transition: 1s;
+}
+.blocos:hover{
+    transform: scale(1.1);
+}
+.textoBlocos h3{
+    text-align: center;
+    margin: 20px 0 10px;
+}
+.textoBlocos p{
+    padding: 0 10px 10px;
+}
+.destaques a{
+    text-decoration: none;
+    background-color: #124503;
+    color: white;
+    font-size: 20px;
+    border: none;
+    padding: 10px 20px;
+}
+.destaques a:hover{
+    background-color: #1a6404;
+}
+.backgroundOndeEstamos{
+    background-image: url(imagens/frenterestaurante.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.backgroundOndeEstamos::before{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.ondeEstamos{
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+}
+.ondeEstamos h2{
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.lineOndeEstamos{
+    background-color: white;
+    height: 1px;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.ondeEstamos p{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+footer{
+    background-color: #000803;
+}
+.conteudoFooter{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+footer ul li a:hover{
+    color: wheat;
+}
+.mainDestaque{
+    padding: 60px 0;
+}
+.mainDestaque h2{
+    color: #124503;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.blocoMainDestaque{
+    display: flex;
+    margin: 20px 0;
+}
+.blocoMainDestaque h3{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.imagemBlocoMainDestaque{
+    width: 40%;
+}
+.imagemBlocoMainDestaque img{
+    max-width: 450px;
+    width: 90%;
+}
+.textoBlocoMainDestaque{
+    width: 60%;
+}
+
+.mainReservaBackground{
+    background-image: url(imagens/mesas.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.mainReservaBackground::before{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.conteudoMainReserva{
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+.conteudoMainReserva h2{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.conteudoMainReserva h4{
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+#formReserva{
+    margin-top: 50px;
+}
+#formReserva p{
+    color: white;
+}
+#formReserva input{
+    margin-bottom: 20px;
+    width: 250px;
+    padding: 5px;
+}
+#formReserva button{
+    background-color: #124503;
+    color: white;
+    font-size: 20px;
+    border: none;
+    padding: 10px 0;
+    cursor: pointer;
+    width: 250px;
+}
